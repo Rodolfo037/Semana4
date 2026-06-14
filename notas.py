@@ -4,9 +4,9 @@
 def notas(x):
     if 20 <= x >= 18:
         print("APROBASTE CON AD")
-    elif 17 <= x >= 14:
+    elif 17 >= x >= 14:
         print("APROBASTE CON A")
-    elif 13 <= x >= 11:
+    elif 13 >= x >= 11:
         print("APROBASTE CON B")
     else:
         print("DESAPROBASTE CON C")
