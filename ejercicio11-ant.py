@@ -4,9 +4,9 @@
 def num0(x):
     while True:
         try: #Controlador de errores en caso de usar valores no númericos
-            valor = float(input(x))
-            if valor > 0 and valor.is_integer():
-                return int(valor)
+            valor = float(input(x)) #Convierte la entrada en decimal
+            if valor > 0 and valor.is_integer(): #Método de valores de tipo float
+                return int(valor) #Retorna valor en entero
             else:
                 print("¡ERROR! Ingresa un número entero positivo.")
         except ValueError:
@@ -35,5 +35,4 @@ x = num0("Ingresa un número entero positivo: ")
 #Resultado
 total = colla(x)
 print("Conjetura de collatz terminada.")
-print(f"Saltos: {total}")
-print(type(total))
+print(f"Saltos: {total}") #Contador de saltos
