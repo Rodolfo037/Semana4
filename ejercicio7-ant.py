@@ -2,15 +2,22 @@
 # AD=20-18  A=17-14  B=13-11 C= 10-0
 
 def notas(x):
-    if 20 <= x >= 18:
-        print("APROBASTE CON AD")
-    elif 17 >= x >= 14:
-        print("APROBASTE CON A")
-    elif 13 >= x >= 11:
-        print("APROBASTE CON B")
+    # if 20 < x or x < 0:
+    #     return("Ingresa una nota válida.")
+    if 18 <= x <= 20:
+        return("APROBASTE CON AD")
+    elif 14 <= x <= 17:
+        return("APROBASTE CON A")
+    elif x >= 11 <= x <= 13:
+        return("APROBASTE CON B")
     else:
-        print("DESAPROBASTE CON C")
-    return
+        return ("DESAPROBASTE CON C")
 
-note1 = int(input("Ingresa tu nota del 0 al 20: "))
-print = notas(note1)
+while True:
+    note1 = int(input("Ingresa tu nota del 0 al 20: "))
+
+    if  0 <= note1 <=20:
+        print(notas(note1))
+        break
+    else: 
+        print("Nota inválida, intenta de nuevo.")
